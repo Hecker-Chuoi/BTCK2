@@ -22,7 +22,7 @@ public class SetStaticItem {
     }
 
     public void setStatic(ArrayList<StaticItem> items){
-        String filePath = "assets/items/static-items/datastatic.txt";
+        String filePath = "Good_Impression/assets/items/static-items/datastatic.txt";
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             while (true) {
                 String name = br.readLine();

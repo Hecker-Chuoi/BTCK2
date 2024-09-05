@@ -24,10 +24,10 @@ public class SetDynamicItem {
     public void setDynamic(ArrayList<DynamicItem> items){
         String filePath;
         if (GameConstant.FORMAT_PLAYER == 1){
-            filePath = "assets/items/dynamic-items/dataoneplayer.txt";
+            filePath = "Good_Impression/assets/items/dynamic-items/dataoneplayer.txt";
         }
         else{
-            filePath = "assets/items/dynamic-items/datatwoplayer.txt";
+            filePath = "Good_Impression/assets/items/dynamic-items/datatwoplayer.txt";
         }
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             while (true) {

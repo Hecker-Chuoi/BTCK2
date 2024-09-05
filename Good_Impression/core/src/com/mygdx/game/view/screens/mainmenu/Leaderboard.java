@@ -43,7 +43,7 @@ public class Leaderboard {
 
     public void initPrint(){
         leaderboard = new Texture("leaderboard/1PlayerLocalLeaderboard.png");
-        file = new File("./assets/files/1PlayerLocalLeaderboard.txt");
+        file = new File("Good_Impression/assets/files/1PlayerLocalLeaderboard.txt");
         mode = 1; // view 1 player leaderboard
         try{
             read();
@@ -55,9 +55,9 @@ public class Leaderboard {
 
     private void initAdd(){
         if(GameConstant.gameType == 1)
-            file = new File("./assets/files/1PlayerLocalLeaderboard.txt");
+            file = new File("Good_Impression/assets/files/1PlayerLocalLeaderboard.txt");
         else if(GameConstant.gameType == 2)
-            file = new File("./assets/files/2PlayerLocalLeaderboard.txt");
+            file = new File("Good_Impression/assets/files/2PlayerLocalLeaderboard.txt");
     }
 
     private boolean checkButtonPressed(int x, int y, int width, int height){
@@ -85,7 +85,7 @@ public class Leaderboard {
         if(mode == 1){
             if(checkButtonPressed(tab2X, tabOriginY, originTabWidth, originTabHeight)){
                 mode = 2;
-                file = new File("./assets/files/2PlayerLocalLeaderboard.txt");
+                file = new File("Good_Impression/assets/files/2PlayerLocalLeaderboard.txt");
                 leaderboard = new Texture("leaderboard/2PlayerLocalLeaderboard.png");
                 try{
                     read();
@@ -98,7 +98,7 @@ public class Leaderboard {
         else if(mode == 2){
             if(checkButtonPressed(tab1X, tabOriginY, originTabWidth, originTabHeight)){
                 mode = 1;
-                file = new File("./assets/files/1PlayerLocalLeaderboard.txt");
+                file = new File("Good_Impression/assets/files/1PlayerLocalLeaderboard.txt");
                 leaderboard = new Texture("leaderboard/1PlayerLocalLeaderboard.png");
                 try{
                     read();
